@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mei's Blog</title>
+    <link rel="icon" type="image/png" href="assets/favicon.ico">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <a href="https://meipipo.github.io" target="_blank">
+            <img src="../assets/icon.jpg" alt="icon" height="50" width="50" id="icon" />
+        </a>
+        <nav>
+            <ul>
+                <li><a id="a-nav" href="https://build-33d3a.web.app/">Build@</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="wrapper">
+            <h1 id="title"><a href="../index.html" id="title">Hello, world!</a></h1>
+            <div id="blog-list">
+                <h2 class="title">Blog List</h2>
+                <ul>
+                <li>
+                    <span class="name">DOM is so fun</span>
+                    <div class="blog-content">The Document Object Model (DOM) is the data representation of the objects that comprise the structure and content of a document on the web. In this guide, we'll briefly introduce the DOM. We'll look at how the DOM represents an HTML or XML document in memory and how you use APIs to create web content and applications.</div>
+                    <div class="btns">
+                        <span class="fa-icon">
+                            <i class="fa fa-pencil"></i>
+                        </span>
+                        <span class="fa-icon">
+                            <i class="fa fa-trash"></i>
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <span class="name">Javascript Rocks</span>
+                    <div class="blog-content">something</div>
+                    <div class="btns">
+                        <span class="fa-icon">
+                            <i class="fa fa-pencil"></i>
+                        </span>
+                        <span class="fa-icon">
+                            <i class="fa fa-trash"></i>
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <span class="name">You Don't Know JS</span>
+                    <div class="blog-content">something</div>
+                    <div class="btns">
+                        <span class="fa-icon">
+                            <i class="fa fa-pencil"></i>
+                        </span>
+                        <span class="fa-icon">
+                            <i class="fa fa-trash"></i>
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <span class="name">Why is JS so weird</span>
+                    <div class="blog-content"></div>
+                    <div class="btns">
+                        <span class="fa-icon">
+                            <i class="fa fa-pencil"></i>
+                        </span>
+                        <span class="fa-icon">
+                            <i class="fa fa-trash"></i>
+                        </span>
+                    </div>
+                </li>
+                </ul>
+            </div>
+
+            <!-- Create New -->
+            <div id="create">
+                <h2 class="title">Create New</h2>
+                <table class="form-table">
+                    <tbody>
+                        <tr>
+                            <th>Title</th>
+                            <td><input type="text" name="title" size="60" value="" placeholder="Write some title">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Contents</th>
+                            <td><textarea name="content" cols="30" rows="10" placeholder="Input your contents"></textarea>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="button-area">
+                    <button class="submit-button">submit</button>
+                </div>
+            </div>
+            
+
+
+        </div>
+    
+    </main>
+    <footer>
+        <!-- Copyright -->
+        <div>
+            Copyright &copy;</i> Mei Fukuda 2020
+        </div>
+      <!-- Copyright -->
+    </footer>
+    <script src="app.js"></script>
+</body>

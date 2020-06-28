@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+:root {
+    --primary-color: salmon;
+    --secondary-color: rgb(204, 121, 112);
+    --color-gray: #f1f1f1;
+    --primary-font: 'Roboto Mono', 'monospace';
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+}
+
+a:visited {
+    text-decoration: none; 
+}
+
+#title:link, #title:visited {
+    color: var(--primary-color);
+}
+
+#title:hover {
+    color: var(--secondary-color);
+}
+
+h1 {
+    color: var(--primary-color);
+    text-align: center;
+    padding: 3rem;
+}
+
+
+main {
+    align-content: center;
+    position: relative;
+    min-height: 100vh
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 14px;
+    background-color: var(--color-gray);
+    color: #000000;
+    text-align: center;
+}
+
+@media all and (max-width: 600px) {
+	header {
+		margin: 10px;
+		text-align: center;
+	}
+	header > nav {
+		line-height: 1;
+        float: none;
+	}
+}
+
+#wrapper{
+    width: 90%;
+    max-width: 960px;
+    margin: 40px auto;
+    border-radius: 6px;
+    box-shadow: 0px 1px 6px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    padding: 0 0 20px;
+    overflow: hidden;
+    border: 1px solid lightgray;
+    align-items: center;
+}
+
+#blog-list, #add-blog, #tabbed-content{
+    margin: 30px;
+}
+
+#blog-list ul, #tabbed-content ul{
+    list-style-type: none;
+    padding: 0;
+}
+  
+#blog-list li{
+    padding: 20px;
+    border: thin dashed #ddd;
+    border-radius: 5px;
+    margin: 20px 10px;
+}
+  
+#blog-list li:hover{
+    background-color: var(--color-gray);
+}
+
+li {
+    height: 100%;
+}
+
+.btns {
+    text-align: right;
+}
+
+.fa-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+.fa-icon:hover{
+    color: var(--secondary-color);
+}
+
+.blog-content {
+    font-size: 12px;
+    color: gray;
+    padding: 1rem;
+}
+
+nav {
+    padding: 10px;
+    float: right;
+}
+  
+ul {
+    list-style: none;
+}
+
+nav > ul > li {
+    display: inline-block;
+    padding: 10px
+}
+
+@media all and (max-width: 600px) {
+    header {
+        margin: 10px;
+        text-align: center;
+    }
+    header > nav {
+        line-height: 1;
+        float: none;
+    }
+}
+
+#icon {
+    border-radius: 50%;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    position: relative;
+    z-index: 3;
+    padding: 10px;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+#a-nav {
+    color: rgb(88, 8, 8);
+    text-decoration: underline dashed;
+}
+#a-nav:link, #a-nav:visited {
+    color: rgb(88, 8, 8);
+}
+#a-nav:hover {
+    color: black;
+}
+
+input {
+    padding: 0.3rem;
+    background-color: rgb(230, 245, 252);
+    border-width: thin;
+    border-radius: 3px;
+    border-style: dashed;
+    border-color: var(--primary-color);
+    outline-color: var(--primary-color);
+    display: block;
+    padding: 12px 15px;
+    width: 100%;
+}
+
+textarea {
+    background-color: rgb(230, 245, 252);
+    border-width: thin;
+    border-radius: 3px;
+    border-style: dashed;
+    border-color: var(--primary-color);
+    outline-color: var(--primary-color);
+    resize: none;
+    height: 10em;
+    display: block;
+    padding: 12px 15px;
+    width: 100%;
+}
+
+li > textarea {
+    margin-top: 0.5rem;
+}
+
+.name {
+    font-size: 16px;
+}
+
+/* create */
+#create {
+    margin: 30px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+p {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 60px auto 40px;
+}
+
+button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    border: none;
+}
+
+textarea[name="content"] {
+    display: inline-block;
+    width: 100%;
+    height: 200px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #ccc;
+}
+
+:-ms-input-placeholder {
+    color: #ccc;
+    opacity: 1;
+}
+
+.form-table {
+    width: 100%;
+}
+
+.form-table th,
+.form-table td {
+    display: block;
+    width: 100%;
+    border-bottom: none;
+}
+ 
+.form-table th {
+    padding: 15px;
+}
+
+.form-table th {
+    position: relative;
+    text-align: left;
+}
+
+.submit-button{
+    background: var(--primary-color);
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+    padding: 0.3rem 1rem;
+    font-size: 14px;
+}
+
+.submit-button:hover{
+    background: var(--secondary-color);
+}
+
+.button-area {
+    padding: 15px;
+    text-align: center;
+}
