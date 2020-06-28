@@ -70,6 +70,10 @@ create.addEventListener('click', (e) => {
         blogContent.className = 'blog-content';
         blogContent.textContent = content;
 
+        if (name == '' && content == '') {
+            return
+        }
+
         // buttons
         const buttons = document.createElement('div');
         buttons.className = 'btns';
