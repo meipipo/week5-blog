@@ -12,13 +12,13 @@ list.addEventListener('click', (e) => {
         if (flag == false) {
             e.target.className = 'fa fa-check'
             const li = e.target.parentElement.parentElement.parentElement;
-            const name = li.childNodes[1];
+            const name = li.querySelector('span[class="name"]');
             const editName = document.createElement('input');
             editName.className = 'name';
             editName.value = name.textContent;
             li.replaceChild(editName, name)
 
-            const blogContent = li.childNodes[3];
+            const blogContent = li.querySelector('div[class="blog-content"]');
             const editContent = document.createElement('textarea');
             editContent.value = blogContent.textContent;
             editContent.className = 'blog-content';
@@ -33,13 +33,14 @@ list.addEventListener('click', (e) => {
         } else {
             const li = e.target.parentElement.parentElement.parentElement;
             const originalName = document.createElement('span');
-            const editedName = li.childNodes[1];
+            originalName.className = 'name';
+            const editedName = li.querySelector('input[class="name"]');
             originalName.textContent = editedName.value;
             li.replaceChild(originalName, editedName);
 
             const originalContent = document.createElement('div');
             originalContent.className = 'blog-content';
-            const editedContent = li.childNodes[3];
+            const editedContent = li.querySelector('textarea[class="blog-content"]');
             originalContent.textContent = editedContent.value;
             li.replaceChild(originalContent, editedContent);
             flag = false;
