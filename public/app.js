@@ -23,21 +23,21 @@ list.addEventListener('click', (e) => {
         editContent.className = 'blog-content';
         li.replaceChild(editContent, blogContent);            
     } else if (e.target.className == 'fa fa-check'){
-            const li = e.target.parentElement.parentElement.parentElement;
+        const li = e.target.parentElement.parentElement.parentElement;
 
-            const originalName = document.createElement('span');
-            originalName.className = 'name';
-            const editedName = li.querySelector('input[class="name"]');
-            originalName.textContent = editedName.value;
-            li.replaceChild(originalName, editedName);
+        const originalName = document.createElement('span');
+        originalName.className = 'name';
+        const editedName = li.querySelector('input[class="name"]');
+        originalName.textContent = editedName.value;
+        li.replaceChild(originalName, editedName);
 
-            const originalContent = document.createElement('div');
-            originalContent.className = 'blog-content';
-            const editedContent = li.querySelector('textarea[class="blog-content"]');
-            originalContent.textContent = editedContent.value;
-            li.replaceChild(originalContent, editedContent);
+        const originalContent = document.createElement('div');
+        originalContent.className = 'blog-content';
+        const editedContent = li.querySelector('textarea[class="blog-content"]');
+        originalContent.textContent = editedContent.value;
+        li.replaceChild(originalContent, editedContent);
 
-            e.target.className = 'fa fa-pencil';
+        e.target.className = 'fa fa-pencil';
     }
 });
 
